@@ -6,21 +6,39 @@
 }
 
 header{
-    background-color: aqua;
+    
     grid-column: 2/3;
     grid-row: 1/1;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns:0.5fr 1fr 0.5fr;
+    align-items: center;
   
 }
+.menu{
+    display: flex;
+    justify-content: space-between;
 
+}
 
+.boton_menu{
     
+    justify-self: end;
 
+}
 
 main{
 grid-column: 1/3;
 grid-row: 2/3;
-background-color: blueviolet;
+display: grid;
+grid-template-columns: 1fr 1.5fr;
+
+}
+
+.main_imagen{
+    size: container;
+}
+.main_texto{
+    grid-column: 2/3;
+  text-align: right ;
 }
 
